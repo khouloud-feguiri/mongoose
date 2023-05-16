@@ -27,3 +27,5 @@ app.listen(PORT, (err) => {
     ? console.log("err=", err)
     : console.log(`Server running on port ${PORT}`);
 });
+app.use('/api/person', require('./routes/personRoute'))
+app.use('api/user', require('./routes/userRoute'))
